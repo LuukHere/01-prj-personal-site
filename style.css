@@ -10,6 +10,7 @@ body {
 
 a {
   color: white; /* Make all links white */
+  font-family: 'Lucida Console', monospace; 
 }
 
 /* Style for the main container to put left and right side by side */
@@ -72,18 +73,6 @@ a {
   margin-bottom: 20px; /* Add some space below the image */
 }
 
-/* Headings style */
-.right-side h1 {
-  margin-top: 0;
-  color: #333;
-  
-}
-
-.right-side h2 {
-  color: #555;
-  margin-bottom: 8px;
-}
-
 /* List style */
 .right-side ul {
   list-style-type: disc;
@@ -103,4 +92,69 @@ a {
   color: white;
   text-align: center;
   word-spacing: 2em;
+}
+
+/* Add this new section for the profile and about me row */
+.profile-about-row {
+  display: flex;              /* Place items side by side */
+  align-items: center;        /* Vertically center the items */
+  justify-content: center;    /* Horizontally center the row */
+  margin-top: 5%;
+  margin-bottom: 20px;        /* Space below the row */
+}
+
+/* Adjust the profile picture for the row */
+.profile-pic {
+  width: 200px;               /* Fixed width */
+  height: 200px;              /* Fixed height */
+  border-radius: 5%;         /* Slightly rounded corners */
+  margin-bottom: 0;
+  margin-right: 20px;         /* Space between image and text */
+  margin-left: 0;             /* Remove extra left margin */
+  margin-top: 0;              /* Remove extra top margin */
+  box-shadow: 2px 2px 8px #222;
+}
+
+/* About Me paragraph in the row */
+.about-me-text {
+  background-color: rgb(113, 113, 113);
+  margin: 0;                  /* Remove default margin */
+  font-size: 1.5em;           /* Normal font size */
+  color: white;               /* White text for readability */
+  padding: 10px 20px;         /* Add some padding for better appearance */
+  border-radius: 1px;         /* Rounded corners for the background */
+  display: flex;              /* Use flex to help with vertical centering */
+  align-items: center;        /* Vertically center the text */
+  height: 150px;              /* Make the text box the same height as the profile picture */
+  box-sizing: border-box;     /* Include padding in the height */
+  box-shadow: 2px 2px 8px #222; /* Add a simple drop shadow */
+}
+
+.skills {
+  display: flex;              /* Use flex to help with alignment */
+  flex-direction: column;     /* Stack items vertically */
+  align-items: center;        /* Center items horizontally */
+  justify-content: center;    /* Center items vertically if needed */
+  margin-top: 20px;
+}
+
+.skills h1{
+  color: white;
+  background-color: rgb(113, 113, 113);
+  font-size: 2em;             /* Make the skills heading larger */
+  margin-bottom: 50px;        /* Space below the heading */
+  text-align: center;         /* Center the heading text */
+  box-shadow: 2px 2px 8px #222; /* Add a simple drop shadow */
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/* Make the HTML icon bigger */
+.skills-icon {
+  font-size: 135px; /* Make the HTML icon twice as big as normal text */
+  margin: 10px;
+  padding-right: 10px; /* Add space to the right of the icon */
+  padding-left: 10px; /* Add space to the left of the icon */
+  box-shadow: 2px 2px 30px #222; /* Add a simple drop shadow */
+  
 }
