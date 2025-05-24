@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+a {
+  color: white; /* Make all links white */
+}
+
 /* Style for the main container to put left and right side by side */
 .container {
   width: 100vw;  /* 100% of the viewport width */
@@ -58,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;               /* Add some space around the content */
+  padding: 20px;               /* Add some space around the content */
 }
 
 .profile-pic {
@@ -89,11 +93,14 @@ body {
 
 /* Footer for the right side */
 .right-footer {
+  font-family: 'Lucida Console', monospace;
   background-color: #333; /* Dark background for the footer */
-  margin-top: auto; /* Push the footer to the bottom */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 100%;            /* Make the footer stretch across the right side */
+  margin-top: auto;       /* Push the footer to the bottom of the right side */
+  padding-top: 10px;      /* Less space above the footer text */
+  padding-bottom: 10px;   /* Less space below the footer text */
   font-size: 0.9em;
   color: white;
   text-align: center;
+  word-spacing: 2em;
 }
