@@ -4,6 +4,8 @@
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  font-family: 'Lucida Console', monospace; /* Use Lucida Console for all text */
+  color: white;
 }
 
 /* Style for the main container to put left and right side by side */
@@ -22,7 +24,30 @@ body {
   background-position: center; /* Center the image */
   width: 50vw;                 /* Take up exactly half of the viewport width */
   height: 100vh;               /* Fill the height of the screen */
-  /* No padding or margin so it fills the left side */
+  display: flex;               /* Use flex to center content */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center vertically */
+  align-items: center;         /* Center horizontally */
+  background-color: #535353;
+  background-blend-mode: overlay;
+}
+
+/* Style for the h1 on the left side */
+.left-side h1 {
+  font-size: 8em;              /* Make the text big */
+  font-weight: 900;            /* Make the text extra bold */
+  margin: 0;                   /* Remove default margin */
+  padding-bottom: 5px;         /* Make space below the heading smaller */
+  line-height: 1;              /* Reduce space above and below the text */
+  letter-spacing: -0.07em;      /* Make the letters closer together */
+}
+
+/* Style for the h2 on the left side */
+.left-side h2 {
+  font-size: 1em;
+  margin: 0;              /* Remove default margin */
+  padding: 0;             /* Remove default padding */
+  line-height: 1.1;       /* Reduce space above and below the text */
 }
 
 /* Right side: content */
@@ -47,6 +72,7 @@ body {
 .right-side h1 {
   margin-top: 0;
   color: #333;
+  
 }
 
 .right-side h2 {
@@ -59,4 +85,15 @@ body {
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+/* Footer for the right side */
+.right-footer {
+  background-color: #333; /* Dark background for the footer */
+  margin-top: auto; /* Push the footer to the bottom */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
 }
